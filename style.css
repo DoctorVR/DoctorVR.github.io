@@ -147,6 +147,7 @@ header .navbar ul li a.active::before{
 .home{
 	min-height: 100vh;
 	background-position: 1000px 500px; 
+	background-attachment: fixed;
 	background-image: url("images/drvrimages5.jpg");
 	background-size:cover;
 	background-position: center;
