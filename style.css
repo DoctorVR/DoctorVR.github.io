@@ -1062,6 +1062,9 @@ footer .social a:hover{
    .home .home-content .block h3{
    	font-size:25px;
    }
+   .home{
+	background-attachment:scroll;
+   }
 	header{
 		padding:15px;
 		position: fixed;
