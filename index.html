@@ -8,17 +8,42 @@
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156944877-2"></script>
 	<script>
+	window.onload = function(){
+		if((window).width()<500){
+			('.glow').removeClass('glow');
+		}
+	};
+	function loadglo()
+	{
+		console.log("HEK");
+		if((window).width()<500){
+			$('.glow').removeClass('glow');
+			console.log("IN");
+		}
+	}
 	window.dataLayer = window.dataLayer || [];
 	function gtag(){dataLayer.push(arguments);}
 	gtag('js', new Date());
 
 	gtag('config', 'UA-156944877-2');
 	</script>
-<body>
+<body onload="loadglo2()">
 
  <!-- Start Header -->
  <header>
  	<div class="container">
+		<script type="text/javascript">
+			loadglo2();
+			function loadglo2()
+			{
+				// console.log("HEK");
+				// window.resize(function(){if(window.width()<500){
+				// 	$('.glow').removeClass('glow');
+				// 	console.log("IN");
+				// }
+			//});
+			}
+		</script>
  	  <div class="row">
  		<div class="brand-name">
  			<a href="" class="logo">DR.VR</a>
@@ -515,6 +540,23 @@
 						text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
 					}
 				}
+
+				.glowimg {
+					font-size: 80px;
+					color: #fff;
+					text-align: center;
+					-webkit-animation: d 1s ease-in-out infinite alternate;
+					-moz-animation: glow 1s ease-in-out infinite alternate;
+					animation: glow 1s ease-in-out infinite alternate;
+				}
+
+				@-webkit-keyframes glowimg {
+					from {
+						text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+					}
+					to {
+						text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+					}
 				</style>
 				<a href="https://unity.com" target="_blank" class="glow"><img src="images/unityicon.png" class="glow" style="color:white" height="75px"></img></a>
 				<a href="https://cloud.google.com" target="_blank" class="glow"><img src="images/gcicon.png" class="glow" height="75px"></img></a>

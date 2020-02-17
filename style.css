@@ -1033,6 +1033,11 @@ footer .social a:hover{
 }
 
 @media(max-width: 767px){
+	.glow{
+		transition: none;
+		-webkit-animation: none;
+		-webkit-transition: none;
+	}
 	.home .home-content .block h1{
    	font-size: 40px;
    }
