@@ -493,12 +493,31 @@
 <footer>
 	<div class="container">
 		<div class="row">
-			<div class="logo">
+			<div class="logo glow">
 				DR.VR
 			</div>
 			<div class="social">
-				<a href="https://unity.com" target="_blank"><img src="images/unityicon.png" style="color:white" height="75px"></img></a>
-				<a href="https://cloud.google.com" target="_blank"><img src="images/gcicon.png" height="75px"></img></a>
+				<style>
+					.glow {
+					font-size: 80px;
+					color: #fff;
+					text-align: center;
+					-webkit-animation: glow 1s ease-in-out infinite alternate;
+					-moz-animation: glow 1s ease-in-out infinite alternate;
+					animation: glow 1s ease-in-out infinite alternate;
+				}
+
+				@-webkit-keyframes glow {
+					from {
+						text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+					}
+					to {
+						text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+					}
+				}
+				</style>
+				<a href="https://unity.com" target="_blank" class="glow"><img src="images/unityicon.png" class="glow" style="color:white" height="75px"></img></a>
+				<a href="https://cloud.google.com" target="_blank" class="glow"><img src="images/gcicon.png" class="glow" height="75px"></img></a>
 				<!--<a href=""><i class="fa fa-facebook"></i></a>
 				<a href=""><i class="fa fa-twitter"></i></a>
 				<a href=""><i class="fa fa-instagram"></i></a>
@@ -513,11 +532,11 @@
 <!-- End Footer -->
 
 <!-- Start CopyRight -->
-<section class="copyright">
+<!--<section class="copyright">
 	<div class="container">
-		<!--<p>&copy; 2020 copyright all right reserved</p>-->
-	</div>
-</section>
+	<p>&copy; 2020 copyright all right reserved</p>-->
+	<!--</div>
+</section>-->
 <!-- Start CopyRight -->
 
  <!-- Start Lightbox -->
