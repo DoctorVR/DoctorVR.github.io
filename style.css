@@ -1062,9 +1062,6 @@ footer .social a:hover{
    .home .home-content .block h3{
    	font-size:25px;
    }
-   .home{
-	background-attachment:scroll;
-   }
 	header{
 		padding:15px;
 		position: fixed;
@@ -1188,6 +1185,11 @@ message-text .text {
 .testimonials .testimonials-content .testi-slider .slide{
 	flex-wrap: wrap;
 }
+}
+@media(max-width: 400px) {
+	.home{
+		background-attachment:scroll;
+	}
 }
 
 
